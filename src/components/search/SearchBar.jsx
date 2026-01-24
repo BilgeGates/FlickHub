@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
-import { FiSearch } from "react-icons/fi";
-import slugify from "slugify";
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { FiSearch } from 'react-icons/fi';
+import slugify from 'slugify';
 
 const SearchBar = () => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const [typingTimeout, setTypingTimeout] = useState(null);
   const navigate = useNavigate();
 
-  const popularSearches = ["Action", "Comedy", "Thriller", "Sci-Fi", "Horror"];
+  const popularSearches = ['Action', 'Comedy', 'Thriller', 'Sci-Fi', 'Horror'];
 
   const handleSearch = (searchQuery) => {
     if (typingTimeout) {
@@ -105,6 +105,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-
-
-
