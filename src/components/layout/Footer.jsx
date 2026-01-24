@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import { FiFilm, FiGithub } from "react-icons/fi";
+import { Link } from 'react-router-dom';
+import { FiFilm, FiGithub } from 'react-icons/fi';
 
 const Footer = () => {
   return (
@@ -66,7 +66,7 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-4">Connect</h4>
             <div className="flex gap-3">
               <a
-                href="https://github.com.BilgeGates"
+                href="https://github.com/BilgeGates"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg transition-colors"
@@ -88,6 +88,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
