@@ -1,16 +1,18 @@
+<h1 align="center">🎬 FlickHub</h1>
+
 <div align="center">
 
-# 🎬 FlickHub
+**Movie discovery and streaming platform with TMDB integration**
 
-### Modern Movie Discovery & Streaming Platform
-
-[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react&logoColor=white)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3.6-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
+[![React](https://img.shields.io/badge/React-18.2-61DAFB?style=flat-square&logo=react&logoColor=white)](https://react.dev)
+[![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.3-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![TMDB API](https://img.shields.io/badge/TMDB_API-Movie_Data-01B4E4?style=flat-square&logo=themoviedatabase&logoColor=white)](https://www.themoviedb.org/)
+[![Privacy](https://img.shields.io/badge/privacy-local--only-blue?style=flat-square)](#)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-[Live Demo](https://flickhub-site.vercel.app) ·
+[Live Demo](https://flickhub-site.vercel.app/) ·
 [Report Bug](https://github.com/BilgeGates/FlickHub/issues) ·
 [Request Feature](https://github.com/BilgeGates/FlickHub/issues)
 
@@ -20,94 +22,44 @@
 
 ## 📖 Table of Contents
 
-- [🌟 Overview](#-overview)
-- [✨ Features](#-features)
-- [🖼 Screenshots](#-screenshots)
-- [🚀 Quick Start](#-quick-start)
-- [📁 Project Structure](#-project-structure)
-- [🛠️ Technology Stack](#️-technology-stack)
-- [🌐 Browser Support](#-browser-support)
-- [🔐 Security & Privacy](#-security--privacy)
-- [🤝 Contributing](#-contributing)
-- [📝 License](#-license)
-- [👨‍💻 Author](#-author)
-- [🙏 Acknowledgments](#-acknowledgments)
+- [Overview](#-overview)
+- [Features](#-features)
+- [Demo Screenshots](#-demo--screenshots)
+- [Quick Start](#-quick-start)
+- [Project Structure](#-project-structure)
+- [Technology Stack](#-technology-stack)
+- [Browser Support](#-browser-support)
+- [Movie Data](#-movie-data)
+- [Security Privacy](#-security--privacy)
+- [Contributing](#-contributing)
+- [FAQ](#-faq)
+- [License](#-license)
 
 ---
 
 ## 🌟 Overview
 
-**FlickHub** is a modern, responsive movie discovery and streaming platform built with React and Vite. Browse trending films, discover upcoming releases, search across genres, and manage your personal favorites — all in a sleek, dark-themed interface optimized for all devices.
-
-### Why FlickHub?
-
-- 🎯 **Intuitive UI** — Clean, modern design with smooth animations
-- ⚡ **Lightning Fast** — Vite-powered with optimized lazy loading
-- 📱 **Fully Responsive** — Seamless experience from mobile to desktop
-- 🔍 **Smart Search** — Find movies by title, genre, or keywords
-- ❤️ **Favorites System** — Save and manage your movie watchlist
-- 🎭 **Genre Filtering** — Browse movies by your preferred genres
+Web application for browsing movies with ratings, genres, and streaming options. Built with React and Vite, featuring a dark-themed interface optimized for all devices.
 
 ---
 
 ## ✨ Features
 
-### 🎬 Core Features
-
-| Feature             | Description                                       |
-| ------------------- | ------------------------------------------------- |
-| **Movie Discovery** | Browse trending, upcoming, and popular movies     |
-| **Advanced Search** | Search by title with real-time results            |
-| **Genre Filtering** | Filter movies by genre categories                 |
-| **Movie Details**   | View cast, ratings, synopsis, and more            |
-| **Video Player**    | Integrated streaming with multiple server options |
-| **Favorites**       | Save movies to your personal watchlist            |
-
-### 🎨 UI/UX Features
-
-| Feature               | Description                           |
-| --------------------- | ------------------------------------- |
-| **Dark Theme**        | Eye-friendly dark mode interface      |
-| **Responsive Design** | Optimized for all screen sizes        |
-| **Smooth Animations** | Framer Motion powered transitions     |
-| **Lazy Loading**      | Images load on scroll for performance |
-| **Infinite Scroll**   | Seamless content loading              |
-| **Glass Morphism**    | Modern frosted glass effects          |
-
-### ⚡ Technical Features
-
-| Feature              | Description                           |
-| -------------------- | ------------------------------------- |
-| **Fast Refresh**     | Instant development updates with Vite |
-| **Code Splitting**   | Optimized bundle chunks               |
-| **SEO Ready**        | React Helmet for meta management      |
-| **Error Boundaries** | Graceful error handling               |
-| **Rate Limiting**    | API request optimization              |
+- Browse trending, upcoming, and popular movies
+- View ratings, genres, and movie details
+- Add movies to favorites
+- Search and filter by title or genre
+- View cast, synopsis, and statistics
+- Integrated video player with multiple servers
+- Responsive design for all devices
 
 ---
 
-## 🖼 Screenshots
+## 🖼 Demo & Screenshots
 
-<details>
-<summary><b>View Screenshots (Click to expand)</b></summary>
+> **Live demo:** https://flickhub-site.vercel.app/
 
-### Home Page
-
-![Home Page](docs/screenshots/home.png)
-
-### Movie Details
-
-![Movie Details](docs/screenshots/details.png)
-
-### Search Results
-
-![Search](docs/screenshots/search.png)
-
-### Mobile View
-
-![Mobile](docs/screenshots/mobile.png)
-
-</details>
+<img src='./docs/screenshots/home.png' />
 
 ---
 
@@ -134,15 +86,13 @@ npm install
 
 # Create environment file
 cp .env.example .env
-
 # Add your TMDB API key to .env
-# VITE_TMDB_API_KEY=your_api_key_here
 
 # Start development server
 npm run dev
 ```
 
-The application will automatically open at [http://localhost:3000](http://localhost:3000)
+The application will automatically open at [http://localhost:5173](http://localhost:5173)
 
 ### Production Build
 
@@ -150,122 +100,96 @@ The application will automatically open at [http://localhost:3000](http://localh
 # Create optimized production build
 npm run build
 
-# Preview production build locally
+# Preview production build
 npm run preview
-
-# Deploy to Vercel (requires Vercel CLI)
-vercel --prod
 ```
-
-### Available Scripts
-
-| Command                | Description               |
-| ---------------------- | ------------------------- |
-| `npm run dev`          | Start development server  |
-| `npm run build`        | Create production build   |
-| `npm run preview`      | Preview production build  |
-| `npm run lint`         | Run ESLint checks         |
-| `npm run lint:fix`     | Fix ESLint errors         |
-| `npm run format`       | Format code with Prettier |
-| `npm run format:check` | Check code formatting     |
 
 ---
 
 ## 📁 Project Structure
 
-<details>
-<summary><b>Complete File Tree (Click to expand)</b></summary>
-
 ```
-FlickHub/
+flickhub/
 │
 ├── 📂 public/
 │   └── favicon.ico
 │
 ├── 📂 src/
 │   │
-│   ├── 📂 assets/
-│   │   ├── 📂 icons/              # SVG icons
-│   │   └── 📂 images/             # Static images
-│   │       └── no-image.jpg       # Placeholder image
+│   ├── 📂 assets/            # Images, fonts, icons
+│   │   ├── 📂 icons/
+│   │   └── 📂 images/
 │   │
 │   ├── 📂 components/
 │   │   │
-│   │   ├── 📂 common/             # Shared components
-│   │   │   ├── Button.jsx         # Reusable button
-│   │   │   ├── Card.jsx           # Base card component
-│   │   │   ├── ErrorBoundary.jsx  # Error handling
-│   │   │   └── Loading.jsx        # Loading states
+│   │   ├── 📂 common/        # Reusable components
+│   │   │   ├── Button.jsx
+│   │   │   ├── Card.jsx
+│   │   │   ├── ErrorBoundary.jsx
+│   │   │   └── Loading.jsx
 │   │   │
-│   │   ├── 📂 layout/             # Layout components
-│   │   │   ├── Footer.jsx         # Site footer
-│   │   │   ├── Layout.jsx         # Main layout wrapper
-│   │   │   └── Navbar.jsx         # Navigation sidebar
+│   │   ├── 📂 layout/        # Layout components
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Layout.jsx
+│   │   │   └── Navbar.jsx
 │   │   │
-│   │   ├── 📂 movie/              # Movie components
-│   │   │   ├── MovieCard.jsx      # Movie card with poster
-│   │   │   └── MovieGrid.jsx      # Responsive movie grid
+│   │   ├── 📂 movie/         # Movie components
+│   │   │   ├── MovieCard.jsx
+│   │   │   └── MovieGrid.jsx
 │   │   │
-│   │   └── 📂 search/             # Search components
-│   │       ├── GenreFilter.jsx    # Genre filter tabs
-│   │       └── SearchBar.jsx      # Search input
+│   │   └── 📂 search/        # Search components
+│   │       ├── GenreFilter.jsx
+│   │       └── SearchBar.jsx
 │   │
-│   ├── 📂 context/
-│   │   └── MovieContext.jsx       # Global state management
+│   ├── 📂 context/           # React Context
+│   │   └── MovieContext.jsx
 │   │
-│   ├── 📂 hooks/
-│   │   ├── useFavorites.js        # Favorites management
-│   │   ├── useMovies.js           # Movie data fetching
-│   │   └── useSearch.js           # Search functionality
+│   ├── 📂 hooks/             # Custom React hooks
+│   │   ├── useFavorites.js
+│   │   ├── useMovies.js
+│   │   └── useSearch.js
 │   │
-│   ├── 📂 pages/
-│   │   ├── FavoritesPage.jsx      # User favorites
-│   │   ├── Home.jsx               # Home/discover page
-│   │   ├── MovieDetailPage.jsx    # Movie details
-│   │   ├── PlayerPage.jsx         # Video player
-│   │   ├── SearchPage.jsx         # Search results
-│   │   ├── TrendingPage.jsx       # Trending movies
-│   │   └── UpcomingPage.jsx       # Upcoming releases
+│   ├── 📂 pages/             # Application pages
+│   │   ├── FavoritesPage.jsx
+│   │   ├── Home.jsx
+│   │   ├── MovieDetailPage.jsx
+│   │   ├── PlayerPage.jsx
+│   │   ├── SearchPage.jsx
+│   │   ├── TrendingPage.jsx
+│   │   └── UpcomingPage.jsx
 │   │
-│   ├── 📂 services/
-│   │   ├── api.js                 # API utilities
-│   │   └── tmdb.js                # TMDB API integration
+│   ├── 📂 services/          # API services
+│   │   ├── api.js
+│   │   └── tmdb.js
 │   │
-│   ├── 📂 styles/
-│   │   ├── animations.css         # CSS animations
-│   │   └── index.css              # Global styles
+│   ├── 📂 styles/            # CSS styles
+│   │   ├── animations.css
+│   │   └── index.css
 │   │
-│   ├── 📂 utils/
-│   │   ├── constants.js           # App constants
-│   │   ├── embedUrls.js           # Video embed URLs
-│   │   └── helpers.js             # Utility functions
+│   ├── 📂 utils/             # Utility functions
+│   │   ├── constants.js
+│   │   ├── embedUrls.js
+│   │   └── helpers.js
 │   │
-│   ├── App.jsx                    # Root component
-│   └── main.jsx                   # Entry point
+│   ├── App.jsx               # Root component
+│   └── main.jsx              # Entry point
 │
-├── 📂 docs/                       # Documentation
-│   ├── CHANGELOG.md
-│   ├── ARCHITECTURE.md
-│   └── screenshots/
-│
-├── 📄 .env.example                # Environment template
-├── 📄 .eslintrc.cjs               # ESLint config
-├── 📄 .prettierrc                 # Prettier config
+├── 📄 .env.example           # Environment template
+├── 📄 .eslintrc.cjs          # ESLint config
+├── 📄 .prettierrc            # Prettier config
 ├── 📄 .gitignore
 ├── 📄 index.html
 ├── 📄 jsconfig.json
-├── 📄 package.json
 ├── 📄 postcss.config.cjs
 ├── 📄 tailwind.config.cjs
 ├── 📄 vite.config.js
+├── 📄 package.json
 ├── 📄 README.md
 ├── 📄 CONTRIBUTING.md
 ├── 📄 CODE_OF_CONDUCT.md
 ├── 📄 SECURITY.md
 └── 📄 LICENSE
 ```
-
-</details>
 
 ---
 
@@ -275,25 +199,25 @@ FlickHub/
 
 <table>
 <tr>
-<td align="center" width="20%">
+<td align="center" width="25%">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50"/><br>
   <b>React 18.2</b><br>
   <sub>UI Framework</sub>
 </td>
 
-<td align="center" width="20%">
+<td align="center" width="25%">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50"/><br>
   <b>JavaScript ES6+</b><br>
   <sub>Language</sub>
 </td>
 
-<td align="center" width="20%">
+<td align="center" width="25%">
   <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tailwindcss.svg" width="50"/><br>
   <b>Tailwind CSS 3.3</b><br>
   <sub>Styling</sub>
 </td>
 
-<td align="center" width="20%">
+<td align="center" width="25%">
   <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/vite.svg" width="50"/><br>
   <b>Vite 5.0</b><br>
   <sub>Build Tool</sub>
@@ -301,64 +225,91 @@ FlickHub/
 </tr>
 </table>
 
-### Key Libraries
+### Additional Libraries
 
-| Library              | Version  | Purpose             |
-| -------------------- | -------- | ------------------- |
-| **React Router DOM** | 6.20.0   | Client-side routing |
-| **Framer Motion**    | 10.16.16 | Animations          |
-| **React Icons**      | 4.12.0   | Icon library        |
-| **React Toastify**   | 9.1.3    | Toast notifications |
-| **React Helmet**     | 6.1.0    | SEO meta tags       |
-| **React Lazy Load**  | 1.6.0    | Image lazy loading  |
-| **Infinite Scroll**  | 6.1.0    | Infinite scrolling  |
-
-### Development Tools
-
-| Tool             | Purpose             |
-| ---------------- | ------------------- |
-| **ESLint**       | Code linting        |
-| **Prettier**     | Code formatting     |
-| **PostCSS**      | CSS processing      |
-| **Autoprefixer** | CSS vendor prefixes |
+- **React Router** - Client-side routing
+- **Framer Motion** - Animations
+- **React Icons** - Icon library
+- **React Toastify** - Toast notifications
+- **localStorage** - User data persistence
 
 ---
 
 ## 🌐 Browser Support
 
-| Browser | Support            |
-| ------- | ------------------ |
-| Chrome  | ✅ Last 2 versions |
-| Firefox | ✅ Last 2 versions |
-| Safari  | ✅ Last 2 versions |
-| Edge    | ✅ Last 2 versions |
-| Opera   | ✅ Last 2 versions |
+<div align="center">
+
+| Browser                                                                                                         | Version | Status              |
+| --------------------------------------------------------------------------------------------------------------- | ------- | ------------------- |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg" width="20"/> Chrome    | 90+     | ✅ Tested           |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firefox/firefox-original.svg" width="20"/> Firefox | 88+     | ✅ Tested           |
+| <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/safari/safari-original.svg" width="20"/> Safari    | 14+     | ✅ Expected to work |
+| <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge.svg" width="20"/> Edge     | 90+     | ✅ Expected to work |
+| <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera.svg" width="20"/> Opera  | 76+     | ✅ Expected to work |
+
+</div>
+
+### Required Browser Features
+
+- ES6+ JavaScript
+- CSS Grid & Flexbox
+- localStorage API
+- Responsive viewport support
+
+---
+
+## 🎬 Movie Data
+
+FlickHub fetches movie data from TMDB (The Movie Database) API.
+
+### Data Features
+
+- Trending and popular movies
+- Upcoming releases
+- Movie details (cast, crew, synopsis)
+- Ratings and vote counts
+- Genre information
+- Poster and backdrop images
+
+### API Configuration
+
+```bash
+# .env file
+VITE_TMDB_API_KEY=your_api_key_here
+```
+
+Get your free API key at [themoviedb.org](https://www.themoviedb.org/settings/api)
+
+### Data Attribution
+
+This product uses the TMDB API but is not endorsed or certified by TMDB.
 
 ---
 
 ## 🔐 Security & Privacy
 
-### Data Handling
+Zero-backend architecture - all functionality runs in the browser.
 
-- ✅ **No user accounts required** — Use anonymously
-- ✅ **Local storage only** — Favorites stored in browser
-- ✅ **No tracking** — No analytics or tracking scripts
-- ✅ **HTTPS only** — Secure API communication
-- ✅ **No cookies** — Privacy-first approach
+### 🔒 Security Highlights
 
-### API Security
+- ✅ No server-side data storage
+- ✅ Client-side processing only
+- ✅ No cookies, trackers, or fingerprinting
+- ✅ No third-party analytics or telemetry
+- ✅ No user data is collected, stored, or transmitted
+- ✅ HTTPS only API communication
 
-- Environment variables for API keys
-- Rate limiting on API requests
-- Input sanitization on search queries
+### 🛡️ Data Safety
 
-For security concerns, see [SECURITY.md](SECURITY.md)
+All favorites are stored locally using localStorage.
+
+For security concerns, see [SECURITY.md](SECURITY.md).
 
 ---
 
 ## 🤝 Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+Contributions welcome.
 
 ### Quick Contribution Guide
 
@@ -368,7 +319,7 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for deta
 git checkout -b feature/amazing-feature
 
 # 3. Commit your changes
-git commit -m "feat: add amazing feature"
+git commit -m 'feat: add amazing feature'
 
 # 4. Push to the branch
 git push origin feature/amazing-feature
@@ -376,26 +327,28 @@ git push origin feature/amazing-feature
 # 5. Open a Pull Request
 ```
 
-### Commit Message Format
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
 
-We use [Conventional Commits](https://www.conventionalcommits.org/):
+- Code standards and best practices
+- Pull request process
+- Bug reporting
+- Feature requests
 
-```
-feat: add new feature
-fix: resolve bug
-docs: update documentation
-style: format code
-refactor: restructure code
-perf: improve performance
-test: add tests
-chore: maintenance tasks
-```
+### Code of Conduct
+
+This project adheres to the Contributor Covenant [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+
+### Contributors
+
+<a href="https://github.com/BilgeGates/FlickHub/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=BilgeGates/FlickHub" />
+</a>
 
 ---
 
 ## 📝 License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ```
 MIT License
@@ -414,7 +367,11 @@ copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 ```
 
 ---
@@ -423,10 +380,13 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 <div align="center">
 
-**Khatai Huseynzada**
+### Khatai Huseynzada
 
-[![GitHub](https://img.shields.io/badge/GitHub-BilgeGates-181717?style=flat-square&logo=github)](https://github.com/BilgeGates)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=flat-square)](https://bilgegates.github.io)
+**Front-End Web Developer | Open Source Contributor**
+
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/BilgeGates)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/khatai-huseynzada)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:darkdeveloperassistant@gmail.com)
 
 </div>
 
@@ -434,26 +394,92 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 ## 🙏 Acknowledgments
 
-- [TMDB](https://www.themoviedb.org/) — Movie database API
-- [Tailwind CSS](https://tailwindcss.com/) — Utility-first CSS
-- [Framer Motion](https://www.framer.com/motion/) — Animation library
-- [React Icons](https://react-icons.github.io/react-icons/) — Icon library
-- [Vite](https://vitejs.dev/) — Next-gen build tool
+<table>
+<tr>
+<td align="center" width="33%">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="100"/><br>
+  <b>React Team</b><br>
+  <sub>Framework</sub>
+</td>
+  
+<td align="center" width="33%">
+  <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" width="100"/><br>
+  <b>Tailwind Labs</b><br>
+  <sub>CSS Framework</sub>
+</td>
+
+<td align="center" width="33%">
+  <b>TMDB</b><br>
+  <sub>Movie Database</sub>
+</td>
+</tr>
+</table>
 
 ---
 
-## 📧 Support & Contact
-
-- **Issues:** [GitHub Issues](https://github.com/BilgeGates/FlickHub/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/BilgeGates/FlickHub/discussions)
-- **Email:** Contact via GitHub profile
-
----
+## 📧 Community & Support
 
 <div align="center">
 
-**⭐ Star this repository if you find it helpful!**
+| Channel                 | Link                                                                     |
+| ----------------------- | ------------------------------------------------------------------------ |
+| 🐛 **Bug Reports**      | [GitHub Issues](https://github.com/BilgeGates/FlickHub/issues)           |
+| 💡 **Feature Requests** | [GitHub Discussions](https://github.com/BilgeGates/FlickHub/discussions) |
+| 📧 **Email**            | darkdeveloperassistant@gmail.com                                         |
 
-Made with ❤️ by [Khatai Huseynzada](https://github.com/BilgeGates)
+_Responses on a best-effort basis_
 
 </div>
+
+---
+
+## ❓ FAQ
+
+<details>
+<summary><b>How do I report a bug?</b></summary>
+
+1. Check if the issue already exists in [GitHub Issues](https://github.com/BilgeGates/FlickHub/issues)
+2. If not, create a new issue with:
+   - Clear description of the problem
+   - Steps to reproduce
+   - Expected vs actual behavior
+   - Screenshots (if applicable)
+   - Browser and OS information
+   </details>
+
+<details>
+<summary><b>Can I use this commercially?</b></summary>
+
+Yes! The source code is MIT licensed and can be used commercially.  
+However, movie data from TMDB API is subject to their terms of use. Review TMDB's licensing requirements for commercial applications.
+
+</details>
+
+<details>
+<summary><b>How do I get a TMDB API key?</b></summary>
+
+1. Create an account at [themoviedb.org](https://www.themoviedb.org/)
+2. Go to Settings → API
+3. Request an API key (free for non-commercial use)
+4. Add it to your `.env` file
+</details>
+
+<details>
+<summary><b>Where does the movie data come from?</b></summary>
+
+Movie data is fetched from TMDB (The Movie Database) API at runtime.  
+This product uses the TMDB API but is not endorsed or certified by TMDB.
+
+</details>
+
+<details>
+<summary><b>How is my data stored?</b></summary>
+
+All user data (favorites) is stored locally in your browser using localStorage.  
+No data is sent to any server.
+
+</details>
+
+---
+
+**© 2026 Khatai Huseynzada. Licensed under MIT.**
