@@ -1,12 +1,12 @@
-import { Outlet } from "react-router-dom";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import { Outlet } from 'react-router-dom';
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 export const Layout = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900">
       <Navbar />
-      <main className="lg:pl-72 min-h-screen">
+      <main className="lg:pl-72 min-h-screen pt-16 lg:pt-0">
         <Outlet />
       </main>
       <Footer />
@@ -15,6 +15,3 @@ export const Layout = () => {
 };
 
 export default Layout;
-
-
-
