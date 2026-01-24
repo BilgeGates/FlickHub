@@ -26,7 +26,7 @@ const FavoritesPage = () => {
 
       <div className="min-h-screen bg-black">
         {/* Header */}
-        <div className="sticky top-0 z-50 bg-gradient-to-b from-black/95 to-transparent backdrop-blur-xl border-b border-white/10">
+        <div className="sticky top-16 lg:top-0 z-40 bg-gradient-to-b from-black/95 to-transparent backdrop-blur-xl border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
@@ -109,6 +109,3 @@ const FavoritesPage = () => {
 };
 
 export default FavoritesPage;
-
-
-
