@@ -1,14 +1,13 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
-import { HiChevronLeft } from "react-icons/hi";
-import { FiCalendar } from "react-icons/fi";
-import { useMovies } from "../hooks/useMovies";
-import MovieGrid from "../components/movie/MovieGrid";
+import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { HiChevronLeft } from 'react-icons/hi';
+import { FiCalendar } from 'react-icons/fi';
+import { useMovies } from '../hooks/useMovies';
+import MovieGrid from '../components/movie/MovieGrid';
 
 const UpcomingPage = () => {
-  const { movies, loading, hasMore, loadMore } = useMovies("upcoming");
+  const { movies, loading, hasMore, loadMore } = useMovies('upcoming');
 
   return (
     <>
@@ -18,7 +17,7 @@ const UpcomingPage = () => {
 
       <div className="min-h-screen bg-black">
         {/* Header */}
-        <div className="sticky top-0 z-50 bg-gradient-to-b from-black/95 to-transparent backdrop-blur-xl border-b border-white/10">
+        <div className="sticky top-16 lg:top-0 z-40 bg-gradient-to-b from-black/95 to-transparent backdrop-blur-xl border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
             <div className="flex items-center gap-4">
               <Link to="/">
@@ -80,6 +79,3 @@ const UpcomingPage = () => {
 };
 
 export default UpcomingPage;
-
-
-
