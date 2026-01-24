@@ -1,15 +1,15 @@
-import React, { useState, memo } from "react";
-import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import { FiPlay, FiInfo, FiCalendar } from "react-icons/fi";
-import { useFavorites } from "../../hooks/useFavorites";
-import { toast } from "react-toastify";
-import noImage from "../../assets/images/no-image.jpg";
-import { API_CONFIG } from "../../utils/constants";
+import { useState, memo } from 'react';
+import { Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
+import { FiPlay, FiInfo, FiCalendar } from 'react-icons/fi';
+import { useFavorites } from '../../hooks/useFavorites';
+import { toast } from 'react-toastify';
+import noImage from '../../assets/images/no-image.jpg';
+import { API_CONFIG } from '../../utils/constants';
 
-const MovieCard = memo(({ movie, index = 0, variant = "default" }) => {
+const MovieCard = memo(({ movie, index = 0 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const { isFavorite, toggleFavorite } = useFavorites();
   const isBookmarked = isFavorite(movie.id);
@@ -21,22 +21,22 @@ const MovieCard = memo(({ movie, index = 0, variant = "default" }) => {
     const success = toggleFavorite(movie);
     if (success) {
       toast.success(
-        isBookmarked ? "Removed from favorites" : "Added to favorites",
-        { position: "bottom-right", autoClose: 2000 }
+        isBookmarked ? 'Removed from favorites' : 'Added to favorites',
+        { position: 'bottom-right', autoClose: 2000 }
       );
     }
   };
 
   const getRatingColor = (rating) => {
-    if (rating >= 7) return "from-green-500 to-emerald-600";
-    if (rating >= 5.5) return "from-orange-400 to-amber-500";
-    return "from-red-500 to-rose-600";
+    if (rating >= 7) return 'from-green-500 to-emerald-600';
+    if (rating >= 5.5) return 'from-orange-400 to-amber-500';
+    return 'from-red-500 to-rose-600';
   };
 
   const getRatingBg = (rating) => {
-    if (rating >= 7) return "bg-green-500/20 border-green-500/30";
-    if (rating >= 5.5) return "bg-orange-500/20 border-orange-500/30";
-    return "bg-red-500/20 border-red-500/30";
+    if (rating >= 7) return 'bg-green-500/20 border-green-500/30';
+    if (rating >= 5.5) return 'bg-orange-500/20 border-orange-500/30';
+    return 'bg-red-500/20 border-red-500/30';
   };
 
   const rating = (movie.vote_average || 0).toFixed(1);
@@ -91,8 +91,8 @@ const MovieCard = memo(({ movie, index = 0, variant = "default" }) => {
             whileTap={{ scale: 0.9 }}
             className={`absolute top-3 right-3 z-30 p-2.5 rounded-full backdrop-blur-md transition-all duration-300 ${
               isBookmarked
-                ? "bg-yellow-500/30 border border-yellow-500/50 text-yellow-400"
-                : "bg-black/40 border border-white/20 text-white hover:bg-black/60"
+                ? 'bg-yellow-500/30 border border-yellow-500/50 text-yellow-400'
+                : 'bg-black/40 border border-white/20 text-white hover:bg-black/60'
             }`}
             onClick={handleBookmark}
           >
@@ -173,7 +173,7 @@ const MovieCard = memo(({ movie, index = 0, variant = "default" }) => {
                 {isHovered && (
                   <motion.div
                     initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
+                    animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
@@ -201,12 +201,12 @@ const MovieCard = memo(({ movie, index = 0, variant = "default" }) => {
           {/* Shimmer Effect */}
           <motion.div
             className="absolute inset-0 z-10 pointer-events-none"
-            initial={{ x: "-100%" }}
-            animate={{ x: isHovered ? "100%" : "-100%" }}
+            initial={{ x: '-100%' }}
+            animate={{ x: isHovered ? '100%' : '-100%' }}
             transition={{ duration: 0.6 }}
             style={{
               background:
-                "linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)",
+                'linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)',
             }}
           />
         </motion.div>
@@ -215,9 +215,6 @@ const MovieCard = memo(({ movie, index = 0, variant = "default" }) => {
   );
 });
 
-MovieCard.displayName = "MovieCard";
+MovieCard.displayName = 'MovieCard';
 
 export default MovieCard;
-
-
-
