@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import { Helmet } from "react-helmet";
-import { motion } from "framer-motion";
-import { useMovieContext } from "../context/MovieContext";
-import { useMovies } from "../hooks/useMovies";
-import MovieGrid from "../components/movie/MovieGrid";
-import SearchBar from "../components/search/SearchBar";
-import GenreFilter from "../components/search/GenreFilter";
-import { Loading } from "../components/common/Loading";
+import { Helmet } from 'react-helmet';
+import { motion } from 'framer-motion';
+import { useMovieContext } from '../context/MovieContext';
+import { useMovies } from '../hooks/useMovies';
+import MovieGrid from '../components/movie/MovieGrid';
+import SearchBar from '../components/search/SearchBar';
+import GenreFilter from '../components/search/GenreFilter';
+import { Loading } from '../components/common/Loading';
 
 const Home = () => {
   const {
@@ -15,7 +14,7 @@ const Home = () => {
     setActiveGenre,
     loading: genresLoading,
   } = useMovieContext();
-  const { movies, loading, hasMore, loadMore } = useMovies("genre", {
+  const { movies, loading, hasMore, loadMore } = useMovies('genre', {
     with_genres: activeGenre,
   });
 
@@ -32,7 +31,7 @@ const Home = () => {
 
       <div className="min-h-screen bg-black">
         {/* Hero Section with Search */}
-        <div className="bg-gradient-to-b from-black via-gray-900 to-black py-12 md:py-16">
+        <div className="bg-gradient-to-b from-black via-gray-900 to-black py-8 md:py-12 lg:py-16">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -55,7 +54,7 @@ const Home = () => {
         </div>
 
         {/* Genre Filter */}
-        <div className="sticky top-0 lg:top-0 z-40 bg-black/95 backdrop-blur-xl border-b border-white/10 py-4">
+        <div className="sticky top-16 lg:top-0 z-40 bg-black/95 backdrop-blur-xl border-b border-white/10 py-4">
           <div className="max-w-7xl mx-auto px-4 md:px-8">
             <GenreFilter
               genres={genres}
@@ -81,6 +80,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
